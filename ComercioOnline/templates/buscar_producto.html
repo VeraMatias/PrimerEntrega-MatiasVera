@@ -1,0 +1,21 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+<h3 class="font-alt">Buscar producto</h3>
+
+<form action="{% url '_buscar' %}" method="GET"> 
+
+    <input type="text" name="busq_titulo" id="busq_titulo">
+
+    <input type="submit" value="Buscar">
+
+
+</form>
+
+{% endblock %}
+
+
+
+

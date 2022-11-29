@@ -1,0 +1,22 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+
+{% block contenido %}
+
+<form action="{% url '_crearcomprador' %}" method="POST"> {% csrf_token %}
+
+    <h3 class="font-alt">Creacion de nuevo comprador</h3>
+    <table>
+        {{ form.as_table }}
+    </table>
+
+    <input type="submit" value="Crear Comprador">
+
+</form>
+{% endblock %}
+
+
+
+
