@@ -22,16 +22,3 @@ class Producto(models.Model):
     titulo = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=200)
     precio = models.IntegerField()
-
-class Tarjeta(models.Model):
-    nombre = models.CharField(max_length=50)
-    DNI = models.IntegerField()
-    numero = models.IntegerField()
-    vencimiento = models.DateField()
-    codigo = models.IntegerField()
-
-
-    #from django.core.validators import MinValueValidator, MaxValueValidator
-    #DNI = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(99999999)])
-    #numero = models.IntegerField(validators=[MinValueValidator(4500000000000000), MaxValueValidator(4599999999999999)])
-    #codigo = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(999)])
